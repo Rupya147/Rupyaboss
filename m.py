@@ -176,7 +176,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "You have not purchased yet purchase now from:- @KaliaYtOwner 🙇."
+        response = "You have not purchased yet purchase now from:- @RupyaGY"
 
     bot.reply_to(message, response)
 
@@ -294,8 +294,8 @@ def handle_bgmi(message):
             target = command[1]
             port = int(command[2])  # Convert port to integer
             time = int(command[3])  # Convert time to integer
-            if time > 800:
-                response = "Error: Time interval must be less than 800."
+            if time > 900:
+                response = "Error: Time interval must be less than 900."
             else:
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
